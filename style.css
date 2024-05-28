@@ -1,0 +1,21 @@
+body{
+    background-size: cover;
+}
+#div1a{
+    width:100%;
+    text-align:left;
+}
+
+
+h3{
+    display:inline;
+    color:white;
+}
+
+#rules{
+    float:right;
+}
+
+#start{
+    font-size: 20px;
+}
