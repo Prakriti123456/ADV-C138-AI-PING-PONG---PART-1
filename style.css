@@ -1,5 +1,6 @@
 body{
     background-size: cover;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #div1a{
     width:100%;
@@ -18,4 +19,22 @@ h3{
 
 #start{
     font-size: 20px;
+}
+h4{
+    background-color:#5a86b8;
+    line-height: 2;
+    margin: 0px;
+}
+.modal-body ol li{
+    width: fit-content;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    
+}
+.modal-body ol li:hover{
+    background-color: rgb(66, 132, 218);
+    cursor:pointer;
+    
 }

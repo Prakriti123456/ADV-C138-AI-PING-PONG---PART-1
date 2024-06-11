@@ -17,16 +17,40 @@
 <center>
     <div id="div1a" class="btn btn-primary">
         <h3>AI PING PONG GAME</h3>
-        <button id="rules" class="btn btn-info">Instructions</button>
+        <button  id="rules"class="btn btn-info" data-toggle = "modal" data-target="#myModal">Instruction</button>
     </div>
     <br>
     <br>
-    <button id="start" class="btn btn-danger" onclick="startGame()">Play Game</button>
+    <button id="start" class="btn btn-info" onclick="startGame()">Play Game</button>
     <br>
     <h1 class="btn btn-success"></h1>
     <br>
+    <br>
+    <button class="btn btn-info" onclick="restart()">Restart</button>
+    <br>
+    <br>
     <div id="canvas">
     </div>
+    <h4 id="footer">Created by - Prakriti Jaiswal</h4>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="model-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h4>Instructions</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                <li>Rule 1 : First keep your laptop screen straight</li>
+                <li>Rule 2 : Move yourself approximately 3-4 feet away from the laptop</li>
+                <li>Rule 3 : Move your right wrist in an ascending and decending manner, a red dot should appear on your right wrist</li>
+                <li>Rule 4 : Now press the play button, and again move yourself 3-4 feet away from laptop</li>
+                <li>Rule 5 : The red paddel is your paddel, that will move as per the movement of your right wrist</li></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+       </div>
 </center>
 <script src="main.js"></script>
 </body>

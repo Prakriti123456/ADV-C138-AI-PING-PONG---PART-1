@@ -22,6 +22,7 @@ var ball = {
 
 function setup(){
   var canvas =  createCanvas(700,600);
+  canvas.parent('canvas');
 }
 
 
@@ -125,7 +126,7 @@ function move(){
   }
 }
 if(pcscore ==4){
-    fill("#FFA500");
+    fill("#5ca4f7");
     stroke(0)
     rect(0,0,width,height-1);
     fill("white");
