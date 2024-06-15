@@ -20,6 +20,10 @@ var ball = {
     dy:3
 }
 
+rightWristY = 0;
+rightWristX = 0;
+scoreRightWrist = 0;
+
 function setup(){
   var canvas =  createCanvas(700,600);
   canvas.parent('canvas');
@@ -60,6 +64,14 @@ function draw(){
  fill("black");
  stroke("black");
  rect(0,0,20,700);
+
+ if(scoreRightWrist > 0.2)
+ {
+   fill("purple");
+   stroke("purple");
+   circle(rightWristX, rightWristY, 30);
+ }
+
  
    //funtion paddleInCanvas call 
    paddleInCanvas();
