@@ -23,6 +23,12 @@ var ball = {
 rightWristY = 0;
 rightWristX = 0;
 scoreRightWrist = 0;
+game_status="";
+
+function startGame(){
+  game_status="Start";
+  document.getElementById("status").innerHTML="Game is Loading";
+}
 
 function setup(){
   var canvas =  createCanvas(700,600);
@@ -65,7 +71,7 @@ function draw(){
  stroke("black");
  rect(0,0,20,700);
 
- if(scoreRightWrist > 0.2)
+ if(game_status=="start"&& scoreRightWrist > 0.2)
  {
    fill("purple");
    stroke("purple");
